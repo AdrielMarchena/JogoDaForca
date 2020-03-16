@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="author" content="Adriel Marchena Santos">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Jogo Da Forca</title>
+</head>
+<body onload="run()">
+        
+    <div id="everything">
+        <label id="hint-label"></label>
+        <div class="words" id="words">
+            <div  id="word">
+
+            </div>
+            <div  id="lines">
+
+            </div>
+        </div>
+        <div class="letters" id= "letters">
+            <button onclick="restart()" id="button-restart">restart</button>
+            <button onclick="giveAHint()" id="button-hint">Hint</button>
+            <button onclick="giveMeOneRight()" id="button-giveMeOne">Give Me One Letter</button>
+        </div>
+        <div id="selection">
+            
+        </div>
+    </div>
+    <label id="message-result"></label>
+    <script src="js/utils/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/view/render.js"></script>
+    <script src="js/control/functional.js"></script>
+    <script src="js/library.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+body {
+    font-family: 'Comic Sans MS';
+    background-color: #0f260b;
+    position: absolute;
+}
+
+#lines,  #hint-label ,p{
+    font-size: 250%;
+    color: greenyellow;
+    display: inline-block;
+    padding-left: 15px;
+    
+}
+
+/*#letters, input{
+    display: -moz-inline-grid;
+    border-radius: 5px;
+    color: black;
+    font-size: 200%;
+}*/
+
+#letters ,button{
+    border-color: black;
+    font-family: 'Comic Sans MS';
+    border-radius: 15px;
+    color: black;
+    font-size: 150%;
+}
+
+#button-giveMeOne:disabled{
+    border-color: black;
+    font-family: 'Comic Sans MS';
+    border-radius: 15px;
+    color: gray;
+    font-size: 150%;
+}
+#letters:hover, button:hover{
+    border-color: #0f260b;
+    background-color: #0f260b;
+    background: #0f260b;
+    font-family: 'Comic Sans MS';
+    border-radius: 10px;
+    color: rgb(204, 0, 255);
+    font-size: 150%;
+}
+
+
+
+#everything{
+    flex: 1;
+}
+
+#message-result{
+    color: white;
+    font-size: 1000%;
+}
+
+#category{
+    border-radius: 10px;
+    background-size: 300%;
+    font-family: 'Comic Sans MS';
+    font-size: 300%;
+}
