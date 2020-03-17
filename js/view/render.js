@@ -27,16 +27,22 @@ function renderWordsVisual(indexOfLetter,letter){
 
 
 function createImage(){
+    //<a href="https://imgbb.com/"><img src="https://i.ibb.co/48WbcP5/image-1.png" alt="image-1" border="0" /></a>
+    
     let inp;
     inp = addElement("words","img","image","");
+    inp.setAttribute('alt','image-'+errors);
+    inp.setAttribute('border','0');
     document.getElementById("letters").insertAdjacentElement("afterend",inp);
 }
 
 
 function renderImages(){
+
     
+
     try{
-       document.getElementById("image").src = "./img/image-" + errors + ".png"; 
+       document.getElementById("image").src = links[errors]; 
     }
     catch(e){
         console.log("ESTA IMAGEM NÃO EXISTE, A VARIAVEL 'errors' SERA ZERADA , ERRO: " + e);

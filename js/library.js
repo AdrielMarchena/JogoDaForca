@@ -37,6 +37,7 @@ const library = {
 
 
     //Sempre deixar o elemento Test como ultimo atributo
+    //This need to be the last one
     test: [
         {name:"aaaaaaaaa",hint:"a Como Voce achou isso?"},
         {name:"bbbbbbb",hint:"b Como Voce achou isso?"},
@@ -46,3 +47,4 @@ const library = {
         {name:"ff",hint:"f Como Voce achou isso?"},
     ],
 }
+//ps:github.com/AdrielMarchena/JogoDaForca
