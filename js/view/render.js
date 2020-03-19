@@ -2,7 +2,6 @@
 * @author Adriel Marchena Santos <adriel_contato@hotmail.com> 
 */ 
 
-let letters= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
 function renderButton(){
     let inp;
@@ -10,7 +9,6 @@ function renderButton(){
 
         inp = addElement('letters','button','button-'+i, letters[i]);
         inp.setAttribute('value',letters[i]);
-        //inp.setAttribute('type',"button");
         inp.setAttribute('onclick','clickLetters(this.id,this.value)');
         document.getElementById('button-restart').insertAdjacentElement("beforebegin",inp);
     
@@ -50,7 +48,6 @@ function renderLines(quant){
         inp = addElement('lines','p','line'+i, "_");
         document.getElementById('lines').insertAdjacentElement("beforeend",inp);
     }
-    //preWord();
 }
 
 function renderSelections(){
@@ -58,13 +55,12 @@ function renderSelections(){
     let elementOption; 
     let elementSelection = addElement("selection","select","category"," ");
     elementSelection.setAttribute("onchange","restart()");
-    //console.log(array[1]);
+
     //Cria as opções das categorias do Objeto library
     for(let i=0;i<array.length-1;i++){
         elementOption = addElement("category","option","option-"+i,array[i]);
         elementOption.setAttribute('value',array[i]);
 
-        //console.log(elementOption);
         document.getElementById('category').insertAdjacentElement("afterbegin",elementOption);
 
     }
@@ -72,9 +68,7 @@ function renderSelections(){
         elementOption = addElement("category","option","optionRandom","Random");
         elementOption.setAttribute('value',"random");
 
-        //console.log(elementOption);
         document.getElementById('category').insertAdjacentElement("afterbegin",elementOption);
 
 
-    //console.log(array);
 }

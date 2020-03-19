@@ -1,8 +1,9 @@
+//Arquivo contendo funções mais genericas
 /** 
 * @author Adriel Marchena Santos <adriel_contato@hotmail.com> 
 */ 
 
-//Arquivo contendo funções mais genericas
+
 
 function randomizer(min,max){
     return Math.floor(min + (Math.random() * max));
@@ -15,7 +16,7 @@ function addElement(parentId, elementTag, elementId, html) {
     var newElement = document.createElement(elementTag);
     newElement.setAttribute('id', elementId);
     newElement.innerHTML = html;
-    //Ta funcionando sem esse apeendChild aqui, qualquer coisa revisitar isso daqui
+    //Ta funcionando sem esse apeendChild aqui, qualquer coisa revisitar isto
     p.appendChild(newElement);
     return newElement;
 }

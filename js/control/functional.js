@@ -5,18 +5,6 @@
 let rightLetters = 0;
 let errors = 0;
 
-/*function preWord(){
-    let inp;
-    console.log(actualGlobalWord)
-    for(let i=0;i<actualGlobalWord.length;i++){
-        if(actualGlobalWord[i] === ' '){
-            inp = addElement('line'+i,'p','letter-'+'-', '-');
-            document.getElementById("line"+i).insertAdjacentElement("beforebegin",inp);
-            }
-    }
-        
-}*/
-
 function clickLetters(id,value){
     if(playing){
         
@@ -66,31 +54,4 @@ function letterIsRight(value){
 function restart(){
     localStorage.setItem("category",document.getElementById("category").value);
     location.reload();
-}
-
-function giveMeOneRight(){
-    if(playing){
-        //Gera um numero aleatorio entre 0 e o tamanho da palavra atual
-        let number = randomizer(0,actualGlobalWord.length);
-        /*
-            Cria o ID do botão da palavra pois precisamos 
-            passar ele na função clickLetters();
-        */
-            if(document.getElementById("line"+number) != null){
-                let idOf = "button-" + letters.indexOf(letters[number]);
-            //console.log(idOf);
-            //console.log(actualGlobalWord[number]);
-            clickLetters(idOf,actualGlobalWord[number].toLowerCase());
-            //Coloca o botão como disabled pois nao faria sentido 
-            //deixar liberado apos o primeiro uso
-            document.getElementById("button-giveMeOne").setAttribute("disabled","true");
-        }
-        else if(document.getElementById("line"+number) == null){
-            giveMeOneRight();
-        }
-        else{
-            console.log("QUEBRADO");
-        }
-    }
-
 }
